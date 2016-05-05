@@ -15,8 +15,6 @@ Clone this repository as well as create mLab database for this example.
 First, Go to `server/config/config.js` change the databse url with your mLab db url
 Then,
 ```
-clone repo
-cd electron-with-express
 npm install
 node start-electron.js
 
