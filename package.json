@@ -1,7 +1,7 @@
 {
-  "name": "base-app",
+  "name": "express-electron-app",
   "version": "1.0.0",
-  "description": "Compare guru",
+  "description": "Rich UI in desktop application",
   "main": "main.js",
   "scripts": {
     "start": "npm run start:nodemon",
