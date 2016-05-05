@@ -1,0 +1,76 @@
+{% extends "_layouts/base.html" %}
+
+ {% block head %}
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"/>
+{% endblock %}
+
+{% block content %}
+ <header>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper"><a class="page-title">SideNav</a></div>
+        </div>
+      </nav>
+      <div class="container">
+        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+      <ul id="nav-mobile" class="side-nav fixed">
+        <li class="logo"><a id="logo-container" href="http://materializecss.com/" class="brand-logo">
+            </a></li>
+        <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
+        <li class="bold"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header  waves-effect waves-teal">CSS</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="">Bruce Wayne</a></li>
+                  <li><a href="">Jim Gordon</a></li>
+                  <li><a href="">Harvey Dent</a></li>
+                  <li><a href="">Richel</a></li>
+                  <li><a href="">Robin</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Components</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="">Badges</a></li>
+                  <li><a href="">Buttons</a></li>
+                  <li><a href="">Breadcrumbs</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header active waves-effect waves-teal">JavaScript</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="">Collapsible</a></li>
+                  <li><a href="">Dialogs</a></li>
+                  <li><a href="">Dropdown</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal">Mobile</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal">Showcase</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m9 l10">
+            <div id="structure" class="section scrollspy">
+              <h4>Introduction</h4>
+              <p class="caption">I'm batman</p>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </main> 
+{% endblock %}
+
+{% block scripts %}
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+{% endblock %}

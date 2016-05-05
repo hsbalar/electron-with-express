@@ -1,0 +1,6 @@
+{% macro field(btnName,lblTitle,btnType='',btnValue='', req='') %}
+<div class="form-group">
+  <label class="control-lable">{{lblTitle}}</label>
+  <input type="{{btnType}}" name="{{btnName}}" class="form-control" value="{{btnValue}}" {{req}}>
+</div>
+{% endmacro %}

@@ -1,0 +1,16 @@
+{% macro render(menu, class='') %}
+<ul class="{{class}}">
+{% for item in menu.items %}
+  {% if item.items.length %}
+  <li class="dropdown">
+    <a href="{{item.url}}" target="{{item.target}}" class="dropdown-toggle" data-toggle="dropdown">{{item.title}} <span class="caret"></span></a>
+    {{ render(item, class="dropdown-menu") }}
+  </li>
+  {% else %}
+  <li class="{{item.active}}">
+    <a href="{{item.url}}" target="{{item.target}}">{{item.title}}</a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endmacro %}
